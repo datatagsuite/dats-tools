@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 DATS_schemasPath = os.path.join(os.path.dirname(__file__), "../json-schemas")
-DATS_contextsPath = os.path.join(os.path.dirname(__file__), "../json-schemas/contexts")
+DATS_contextsPath = os.path.join(os.path.dirname(__file__), "../contexts")
 
 def validate_instance(path, filename, schema_filename, error_printing):
     try:
@@ -90,4 +90,5 @@ def validate_dats_schemas():
     return validate_schemas(DATS_schemasPath)
 
 def validate_dats_contexts():
-    return validate_schemas(DATS_contextsPath)
+    print(os.path.join(DATS_contextsPath, "sdo"))
+    return validate_schemas(os.path.join(DATS_contextsPath, "sdo"))

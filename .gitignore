@@ -1,0 +1,8 @@
+# never commit the 'json-schemas' folder as it comes from the schema repository
+json-schemas
+
+# never commit the 'json-instances' folder as it comes from the schema repository
+json-instances
+
+# never commit the 'contexts' folder as it comes from the schema repository
+contexts
