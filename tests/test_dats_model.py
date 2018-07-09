@@ -19,7 +19,7 @@ class DatasetValidation(TestCase):
         self.assertTrue(dats_model.validate_dats_contexts())
 
     def test_validate_dataset_1(self):
-        self.assertTrue(dats_model.validate_dataset(self.path, "SBGrid-179.json", 0))
+        self.assertTrue(dats_model.validate_dataset(self.path, "SBGrid-179.json", 1))
 
     def test_validate_dataset_2(self):
         self.assertTrue(dats_model.validate_dataset(self.path, "ClinicalTrials.gov-NCT00001372.json", 1))
@@ -65,5 +65,3 @@ class DatasetValidation(TestCase):
     def test_validate_dataset_12(self):
         folder_path = os.path.join(self.path, "datacommons")
         self.assertTrue(dats_model.validate_dataset(folder_path, "dats_phs001143.json", 1))
-   
-
