@@ -1,7 +1,6 @@
 language: python
 python:
-- "3.4"
-- "3.5"
+- "2.7"
 before_install:
 - bash -x get_schemas_contexts_data.sh
 # install dependencies
