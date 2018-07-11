@@ -1,6 +1,5 @@
 import os
 from unittest import TestCase
-
 from dats import dats_model
 
 
