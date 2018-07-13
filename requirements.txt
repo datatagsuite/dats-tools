@@ -2,6 +2,6 @@ jsonschema
 pyld
 rfc3987
 jsonref
-python_jsonschema_objects
 rdflib-jsonld
 pyOpenSSL
+notebook==5.0.0

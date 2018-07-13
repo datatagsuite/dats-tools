@@ -5,8 +5,12 @@ from os.path import join
 from rdflib import Graph, plugin
 from rdflib.serializer import Serializer
 
-def jsonld2rdf(jsonld_doc):
+def jsonld2graph(jsonld_doc):
     g = Graph().parse(data=jsonld_doc, format='json-ld')
+    return g
+
+def jsonld2rdf(jsonld_doc):
+    g = jsonld2graph(jsonld_doc)
     return g.serialize(format='n3', indent=4)
 
 
