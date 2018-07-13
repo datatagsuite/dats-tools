@@ -4,4 +4,4 @@ rfc3987
 jsonref
 rdflib-jsonld
 pyOpenSSL
-notebook==5.0.0
+notebook==5.4.1
