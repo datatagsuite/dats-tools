@@ -52,7 +52,7 @@ def validate_instance(path, filename, schema_filename, error_printing):
                 errors = sorted(validator.iter_errors(instance), key=lambda e: e.path)
                 for error in errors:
                     for suberror in sorted(error.context, key=lambda e: e.schema_path):
-                        print(list(suberror.schema_path), suberror.message, sep=", ")
+                        print(list(suberror.schema_path), suberror.message)
 
                 if (len(errors) == 0):
                     logger.info("...done")
@@ -104,5 +104,5 @@ def validate_dats_schemas():
     return validate_schemas(DATS_schemasPath)
 
 def validate_dats_contexts():
-    print(os.path.join(DATS_contextsPath, "sdo"))
+    logger.info("Validating contexts at %s", os.path.join(DATS_contextsPath, "sdo"))
     return validate_schemas(os.path.join(DATS_contextsPath, "sdo"))
