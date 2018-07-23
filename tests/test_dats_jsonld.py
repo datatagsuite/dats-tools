@@ -420,7 +420,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "http://w3id.org/datacommons/phs000946.v3.p1",
+        "@id": "http://w3id.org/datacommons/phs000946.v3.p1.identifier",
         "identifier": "phs000946.v3.p1"
       },
       "version": "v3",
@@ -848,10 +848,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs001024.v3.p1",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs001024.v3.p1.identifier",
         "identifier": "phs001024.v3.p1"
       },
       "version": "v3",
@@ -921,10 +921,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000964.v3.p1",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000964.v3.p1.identifier",
         "identifier": "phs000964.v3.p1"
       },
       "version": "v3",
@@ -994,10 +994,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000956.v3.p1",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000956.v3.p1.identifier",
         "identifier": "phs000956.v3.p1"
       },
       "version": "v3",
@@ -1067,10 +1067,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000954.v2.p1",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000954.v2.p1.identifier",
         "identifier": "phs000954.v2.p1"
       },
       "version": "v2",
@@ -1140,10 +1140,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000921.v2.p1",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000921.v2.p1.identifier",
         "identifier": "phs000921.v2.p1"
       },
       "version": "v2",
@@ -1213,10 +1213,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs001040.v2.p1",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs001040.v2.p1.identifier",
         "identifier": "phs001040.v2.p1"
       },
       "version": "v2",
@@ -1286,10 +1286,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000993.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000993.v2.p2.identifier",
         "identifier": "phs000993.v2.p2"
       },
       "version": "v2",
@@ -1359,10 +1359,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000997.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000997.v2.p2.identifier",
         "identifier": "phs000997.v2.p2"
       },
       "version": "v2",
@@ -1432,10 +1432,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs001032.v3.p2",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs001032.v3.p2.identifier",
         "identifier": "phs001032.v3.p2"
       },
       "version": "v3",
@@ -1505,10 +1505,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs001062.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs001062.v2.p2.identifier",
         "identifier": "phs001062.v2.p2"
       },
       "version": "v2",
@@ -1581,7 +1581,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs000920.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000920.v2.p2.identifier",
         "identifier": "phs000920.v2.p2"
       },
       "version": "v2",
@@ -1655,7 +1655,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000974.v2.p2.identifier",
         "identifier": "phs000974.v2.p2"
       },
       "version": "v2",
@@ -1729,7 +1729,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000951.v2.p2.identifier",
         "identifier": "phs000951.v2.p2"
       },
       "version": "v2",
@@ -1803,7 +1803,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000988.v2.p1.identifier",
         "identifier": "phs000988.v2.p1"
       },
       "version": "v2",
@@ -1876,7 +1876,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs000972.v2.p1",
       "identifier": {
         "@type": "Identifier",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000972.v2.p1.identifier",
         "identifier": "phs000972.v2.p1"
       },
       "version": "v2",
@@ -1946,11 +1946,11 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs001211.v1.p1",
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000972.v2.p1.identifier",
         "identifier": "phs001211.v1.p1"
       },
       "version": "v1",
@@ -2020,11 +2020,11 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs001189.v1.p1",
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs001189.v1.p1.identifier",
         "identifier": "phs001189.v1.p1"
       },
       "version": "v1",
@@ -2094,11 +2094,11 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs001143.v1.p1",
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs001143.v1.p1.identifier",
         "identifier": "phs001143.v1.p1"
       },
       "version": "v1",
