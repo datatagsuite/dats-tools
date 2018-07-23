@@ -527,7 +527,7 @@ topmed="""{
               "alternateIdentifiers": [
                 {
                   "@type": "AlternateIdentifier",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/altid1",
                   "identifier": "0000000",
                   "identifierSource": "dbGaP"
                 }
@@ -555,7 +555,7 @@ topmed="""{
                 {
                   "@type": "Material",
                   "@context": "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/material3",
                   "name": "SU0000000",
                   "identifier": {
                     "identifier": "SU0000000"
@@ -564,7 +564,7 @@ topmed="""{
                     {
                       "@type": "AlternateIdentifier",
                       "@context": "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/altid2",
                       "identifier": "0000000",
                       "identifierSource": "dbGaP"
                     }
@@ -574,7 +574,7 @@ topmed="""{
                     {
                       "@type": "Dimension",
                       "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/dimension100",
                       "name": {
                         "value": "Gender"
                       },
@@ -586,7 +586,7 @@ topmed="""{
                     {
                       "@type": "Dimension",
                       "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/dimension101",
                       "name": {
                         "value": "Age"
                       },
@@ -621,7 +621,7 @@ topmed="""{
                   "extraProperties": [
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp1",
                       "category": "BMI",
                       "values": [
                         "23.71"
@@ -629,7 +629,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp2",
                       "category": "CIGSPERDAY",
                       "values": [
                         "5"
@@ -637,7 +637,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp3",
                       "category": "CIGSPERDAY_AVERAGE",
                       "values": [
                         "25"
@@ -645,7 +645,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp4",
                       "category": "CURRENT_SMOKER",
                       "values": [
                         "No"
@@ -653,7 +653,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp5",
                       "category": "DNA_AGE",
                       "values": [
                         "48.75"
@@ -661,7 +661,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp6",
                       "category": "FORMER_SMOKER",
                       "values": [
                         "No"
@@ -669,7 +669,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp7",
                       "category": "GENDER",
                       "values": [
                         "Female"
@@ -677,7 +677,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp8",
                       "category": "HEIGHT",
                       "values": [
                         "161.3"
@@ -685,7 +685,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp9",
                       "category": "PACKYEARS",
                       "values": [
                         "32.25"
@@ -693,7 +693,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp10",
                       "category": "PREGNANCY",
                       "values": [
                         "No"
@@ -701,7 +701,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp11",
                       "category": "RACE",
                       "values": [
                         "Caucasian"
@@ -709,7 +709,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp12",
                       "category": "SUBJECT_ID",
                       "values": [
                         "SU0000000"
@@ -717,7 +717,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp13",
                       "category": "VISIT_AGE",
                       "values": [
                         "46.76"
@@ -725,7 +725,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp14",
                       "category": "WEIGHT",
                       "values": [
                         "63.64"
@@ -733,7 +733,7 @@ topmed="""{
                     },
                     {
                       "@type": "CategoryValuesPair",
-                      "@id": "",
+                      "@id": "http://w3id.org/datacommons/catvp15",
                       "category": "dbGaP_Subject_ID",
                       "values": [
                         "0000000"
@@ -744,7 +744,7 @@ topmed="""{
                 {
                   "@type": "AnatomicalPart",
                   "@context": "https://w3id.org/dats/context/sdo/anatomical_part_sdo_context.jsonld",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp16",
                   "name": "blood",
                   "identifier": {
                     "identifier": "UBERON:0000178",
@@ -761,7 +761,7 @@ topmed="""{
               "extraProperties": [
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp17",
                   "category": "ANALYTE_TYPE",
                   "values": [
                     "DNA"
@@ -769,7 +769,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp18",
                   "category": "BODY_SITE",
                   "values": [
                     "Blood"
@@ -777,7 +777,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp19",
                   "category": "Funding_Source",
                   "values": [
                     "TOPMed"
@@ -785,7 +785,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp20",
                   "category": "IS_TUMOR",
                   "values": [
                     "Is not a tumor"
@@ -793,7 +793,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp21",
                   "category": "SAMPLE_ID",
                   "values": [
                     "SA0000000"
@@ -801,7 +801,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp22",
                   "category": "SEQUENCING_CENTER",
                   "values": [
                     "UW"
@@ -809,7 +809,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp23",
                   "category": "Study_Name",
                   "values": [
                     "EOCOPD"
@@ -817,7 +817,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp24",
                   "category": "TOPMed_Phase",
                   "values": [
                     "1"
@@ -825,7 +825,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp25",
                   "category": "TOPMed_Project",
                   "values": [
                     "COPD"
@@ -833,7 +833,7 @@ topmed="""{
                 },
                 {
                   "@type": "CategoryValuesPair",
-                  "@id": "",
+                  "@id": "http://w3id.org/datacommons/catvp26",
                   "category": "dbGaP_Sample_ID",
                   "values": [
                     "0000000"
@@ -859,7 +859,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -910,7 +910,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp27",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -932,7 +932,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -983,7 +983,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp28",
           "category": "study_type",
           "values": [
             "Longitudinal Cohort"
@@ -1005,7 +1005,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1056,7 +1056,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp29",
           "category": "study_type",
           "values": [
             "Family"
@@ -1078,7 +1078,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1129,7 +1129,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp30",
           "category": "study_type",
           "values": [
             "Longitudinal"
@@ -1151,7 +1151,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1202,7 +1202,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp31",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -1224,7 +1224,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1275,7 +1275,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp32",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -1297,7 +1297,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1348,7 +1348,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp33",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -1370,7 +1370,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1421,7 +1421,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp34",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -1443,7 +1443,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1494,7 +1494,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp35",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -1516,7 +1516,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1567,7 +1567,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp36",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -1589,7 +1589,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1640,7 +1640,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp37",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -1663,7 +1663,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1714,7 +1714,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp38",
           "category": "study_type",
           "values": [
             "Cohort"
@@ -1737,7 +1737,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1788,7 +1788,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp39",
           "category": "study_type",
           "values": [
             "Case-Control"
@@ -1811,7 +1811,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1862,7 +1862,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp40",
           "category": "study_type",
           "values": [
             "Parent-Offspring Trios"
@@ -1884,7 +1884,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1935,7 +1935,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp41",
           "category": "study_type",
           "values": [
             "Cross-Sectional, Population"
@@ -1958,7 +1958,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -2009,7 +2009,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp42",
           "category": "study_type",
           "values": [
             "Case-Control"
@@ -2032,7 +2032,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -2083,7 +2083,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp43",
           "category": "study_type",
           "values": [
             "Case Set"
@@ -2106,7 +2106,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -2157,7 +2157,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/catvp44",
           "category": "study_type",
           "values": [
             "Family"
