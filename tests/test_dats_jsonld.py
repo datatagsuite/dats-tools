@@ -358,22 +358,24 @@ jsonld_doc = """
 topmed="""{
   "@type": "Dataset",
   "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-  "@id": "https://www.ncbi.nlm.nih.gov/gap/?term=topmed",
+  "@id": "http://w3id.org/datacommons/topmeddataset",
   "identifier": {
     "@type": "Identifier",
-    "identifier": "TOPMed"
+    "identifierSource": "TOPMed",
+    "identifier": "https://www.ncbi.nlm.nih.gov/gap/?term=topmed"
   },
   "title": "Trans-Omics for Precision Medicine (TOPMed)",
   "description": "TOPMed generates scientific resources related to heart, lung, blood, and sleep disorders (HLBS). It is sponsored by the NIH NHLBI and is part of a broader Precision Medicine Initiative.",
   "storedIn": {
     "@type": "DataRepository",
     "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-    "@id": "",
+    "@id": "https://www.ncbi.nlm.nih.gov/gap",
     "name": "dbGaP"
   },
   "types": [
     {
       "@type": "DataType",
+      "@id": "http://w3id.org/datacommons/datatype1",
       "@context": "https://w3id.org/dats/context/sdo/data_type_sdo_context.jsonld",
       "information": {
         "value": "DNA sequencing",
@@ -402,10 +404,10 @@ topmed="""{
     {
       "@type": "DatasetDistribution",
       "@context": "https://w3id.org/dats/context/sdo/dataset_distribution_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/datasetdistribution1",
       "access": {
         "@type": "Access",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/access1",
         "landingPage": "https://www.ncbi.nlm.nih.gov/gap/?term=topmed"
       }
     }
@@ -414,11 +416,11 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/dataset2",
       "identifier": {
         "@type": "Identifier",
         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/phs000946.v3.p1",
         "identifier": "phs000946.v3.p1"
       },
       "version": "v3",
@@ -426,11 +428,13 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "",
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
         {
+          "@context": "https://w3id.org/dats/context/sdo/data_type_sdo_context.jsonld",
+          "@id": "http://w3id.org/datacommons/datatype2",
           "information": {
             "value": "DNA sequencing",
             "valueIRI": "http://purl.obolibrary.org/obo/OBI_0000626"
@@ -449,7 +453,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -458,13 +462,14 @@ topmed="""{
         {
           "@type": "Dimension",
           "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/dimension1",
           "name": {
             "value": "Actual Subject Count"
           },
           "description": "The actual number of subjects entered into a clinical trial.",
           "types": [
             {
+              "@id": "http://w3id.org/datacommons/datatype3",
               "value": "Actual Subject Number",
               "valueIRI": "http://purl.obolibrary.org/obo/NCIT_C98703"
             }
@@ -477,7 +482,7 @@ topmed="""{
       "extraProperties": [
         {
           "@type": "CategoryValuesPair",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/extraproperties1",
           "category": "study_type",
           "values": [
             "Pedigree Whole Genome Sequencing"
@@ -488,16 +493,17 @@ topmed="""{
         {
           "@type": "Material",
           "@context": "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld",
-          "@id": "",
+          "@id": "http://w3id.org/datacommons/material1",
           "name": "DNA from SA0000000",
           "description": "DNA extracted from blood specimen collected from subject SU0000000",
           "taxonomy": [
             {
               "@type": "TaxonomicInformation",
               "@context": "https://w3id.org/dats/context/sdo/taxonomic_information_sdo_context.jsonld",
-              "@id": "",
+              "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
               "name": "Homo sapiens",
               "identifier": {
+                "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
                 "identifier": "ncbitax:9606",
                 "identifierSource": "ncbitax"
               }
@@ -513,7 +519,7 @@ topmed="""{
             {
               "@type": "Material",
               "@context": "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld",
-              "@id": "",
+              "@id": "http://w3id.org/datacommons/material2",
               "name": "SA0000000",
               "identifier": {
                 "identifier": "SA0000000"
@@ -531,7 +537,7 @@ topmed="""{
                 {
                   "@type": "TaxonomicInformation",
                   "@context": "https://w3id.org/dats/context/sdo/taxonomic_information_sdo_context.jsonld",
-                  "@id": "",
+                  "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
                   "name": "Homo sapiens",
                   "identifier": {
                     "identifier": "ncbitax:9606",
@@ -594,7 +600,7 @@ topmed="""{
                     {
                       "@type": "TaxonomicInformation",
                       "@context": "https://w3id.org/dats/context/sdo/taxonomic_information_sdo_context.jsonld",
-                      "@id": "",
+                      "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
                       "name": "Homo sapiens",
                       "identifier": {
                         "identifier": "ncbitax:9606",
@@ -876,7 +882,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -949,7 +955,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1022,7 +1028,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1095,7 +1101,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1168,7 +1174,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1241,7 +1247,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1314,7 +1320,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1387,7 +1393,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1460,7 +1466,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1533,7 +1539,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1572,7 +1578,7 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000920.v2.p2",
       "identifier": {
         "@type": "Identifier",
         "@id": "",
@@ -1606,7 +1612,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1645,9 +1651,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+       "@id": "http://w3id.org/datacommons/phs000974.v2.p2",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "",
         "identifier": "phs000974.v2.p2"
       },
@@ -1679,7 +1686,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1718,9 +1725,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000951.v2.p2",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "",
         "identifier": "phs000951.v2.p2"
       },
@@ -1752,7 +1760,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1791,9 +1799,10 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000988.v2.p1",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "",
         "identifier": "phs000988.v2.p1"
       },
@@ -1825,7 +1834,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1864,7 +1873,7 @@ topmed="""{
     {
       "@type": "Dataset",
       "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
-      "@id": "",
+      "@id": "http://w3id.org/datacommons/phs000972.v2.p1",
       "identifier": {
         "@type": "Identifier",
         "@id": "",
@@ -1898,7 +1907,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -1940,6 +1949,7 @@ topmed="""{
       "@id": "",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "",
         "identifier": "phs001211.v1.p1"
       },
@@ -1971,7 +1981,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -2013,6 +2023,7 @@ topmed="""{
       "@id": "",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "",
         "identifier": "phs001189.v1.p1"
       },
@@ -2044,7 +2055,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -2086,6 +2097,7 @@ topmed="""{
       "@id": "",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "",
         "identifier": "phs001143.v1.p1"
       },
@@ -2117,7 +2129,7 @@ topmed="""{
         {
           "@type": "Organization",
           "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
-          "@id": "",
+          "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
         }
@@ -2508,9 +2520,12 @@ class FormatConversion(TestCase):
     def test_convert2(self):
         print dats_jsonld.jsonld2rdf(bdbag)
 
+    def test_convert3(self):
+        print dats_jsonld.jsonld2rdf(topmed)
+
 
     def test_query_creators(self):
-        g =dats_jsonld.jsonld2graph(bdbag)
+        g =dats_jsonld.jsonld2graph(topmed)
         qres = g.query(
             """            
             SELECT DISTINCT ?dataset ?creator
