@@ -97,7 +97,7 @@ def validate_schemas(path):
     result = True
     files = [f for f in listdir(path) if isfile(join(path, f))]
     for schemaFile in files:
-        result = result and  validate_schema(path, schemaFile)
+        result = result and validate_schema(path, schemaFile)
     return result
 
 def validate_dats_schemas():
@@ -105,4 +105,7 @@ def validate_dats_schemas():
 
 def validate_dats_contexts():
     logger.info("Validating contexts at %s", os.path.join(DATS_contextsPath, "sdo"))
-    return validate_schemas(os.path.join(DATS_contextsPath, "sdo"))
+    result = validate_schemas(os.path.join(DATS_contextsPath, "sdo"))
+    logger.info("Validating contexts at %s", os.path.join(DATS_contextsPath, "obo"))
+    result = result and validate_schemas(os.path.join(DATS_contextsPath, "obo"))
+    return result
