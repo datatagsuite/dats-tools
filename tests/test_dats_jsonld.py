@@ -361,7 +361,9 @@ topmed="""{
   "@id": "http://w3id.org/datacommons/topmeddataset",
   "identifier": {
     "@type": "Identifier",
+    "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
     "identifierSource": "TOPMed",
+    "@id": "http://w3id.org/datacommons/topmeddataset.identifier",
     "identifier": "https://www.ncbi.nlm.nih.gov/gap/?term=topmed"
   },
   "title": "Trans-Omics for Precision Medicine (TOPMed)",
@@ -407,6 +409,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/datasetdistribution1",
       "access": {
         "@type": "Access",
+        "@context": "https://w3id.org/dats/context/sdo/access_sdo_context.jsonld",
         "@id": "http://w3id.org/datacommons/access1",
         "landingPage": "https://www.ncbi.nlm.nih.gov/gap/?term=topmed"
       }
@@ -428,7 +431,7 @@ topmed="""{
       "storedIn": {
         "@type": "DataRepository",
         "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-        "@id": "http://w3id.org/datacommons/datarepository2",
+        "@id": "https://www.ncbi.nlm.nih.gov/gap",
         "name": "dbGaP"
       },
       "types": [
@@ -504,6 +507,7 @@ topmed="""{
               "name": "Homo sapiens",
               "identifier": {
                 "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+                "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
                 "identifier": "ncbitax:9606",
                 "identifierSource": "ncbitax"
               }
@@ -522,14 +526,16 @@ topmed="""{
               "@id": "http://w3id.org/datacommons/material2",
               "name": "SA0000000",
               "identifier": {
-                "identifier": "SA0000000"
+                "identifier": "SA0000000",
+                "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld"
               },
               "alternateIdentifiers": [
                 {
                   "@type": "AlternateIdentifier",
                   "@id": "http://w3id.org/datacommons/altid1",
                   "identifier": "0000000",
-                  "identifierSource": "dbGaP"
+                  "identifierSource": "dbGaP",
+                  "@context": "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld"
                 }
               ],
               "description": "blood specimen collected from subject SU0000000",
@@ -541,7 +547,8 @@ topmed="""{
                   "name": "Homo sapiens",
                   "identifier": {
                     "identifier": "ncbitax:9606",
-                    "identifierSource": "ncbitax"
+                    "identifierSource": "ncbitax",
+                    "@context": "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld"
                   }
                 }
               ],
@@ -558,7 +565,8 @@ topmed="""{
                   "@id": "http://w3id.org/datacommons/material3",
                   "name": "SU0000000",
                   "identifier": {
-                    "identifier": "SU0000000"
+                    "identifier": "SU0000000",
+                    "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld"
                   },
                   "alternateIdentifiers": [
                     {
@@ -604,7 +612,8 @@ topmed="""{
                       "name": "Homo sapiens",
                       "identifier": {
                         "identifier": "ncbitax:9606",
-                        "identifierSource": "ncbitax"
+                        "identifierSource": "ncbitax",
+                         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld"
                       }
                     }
                   ],
@@ -852,6 +861,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs001024.v3.p1.identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "identifier": "phs001024.v3.p1"
       },
       "version": "v3",
@@ -925,6 +935,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs000964.v3.p1.identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "identifier": "phs000964.v3.p1"
       },
       "version": "v3",
@@ -998,6 +1009,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs000956.v3.p1.identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "identifier": "phs000956.v3.p1"
       },
       "version": "v3",
@@ -1071,6 +1083,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs000954.v2.p1.identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "identifier": "phs000954.v2.p1"
       },
       "version": "v2",
@@ -1143,6 +1156,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs000921.v2.p1",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "http://w3id.org/datacommons/phs000921.v2.p1.identifier",
         "identifier": "phs000921.v2.p1"
       },
@@ -1217,6 +1231,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs001040.v2.p1.identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "identifier": "phs001040.v2.p1"
       },
       "version": "v2",
@@ -1289,6 +1304,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs000993.v2.p2",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "http://w3id.org/datacommons/phs000993.v2.p2.identifier",
         "identifier": "phs000993.v2.p2"
       },
@@ -1362,6 +1378,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs000997.v2.p2",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "http://w3id.org/datacommons/phs000997.v2.p2.identifier",
         "identifier": "phs000997.v2.p2"
       },
@@ -1436,6 +1453,7 @@ topmed="""{
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs001032.v3.p2.identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "identifier": "phs001032.v3.p2"
       },
       "version": "v3",
@@ -1508,6 +1526,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs001062.v2.p2",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "http://w3id.org/datacommons/phs001062.v2.p2.identifier",
         "identifier": "phs001062.v2.p2"
       },
@@ -1581,6 +1600,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs000920.v2.p2",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "http://w3id.org/datacommons/phs000920.v2.p2.identifier",
         "identifier": "phs000920.v2.p2"
       },
@@ -1876,6 +1896,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs000972.v2.p1",
       "identifier": {
         "@type": "Identifier",
+        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
         "@id": "http://w3id.org/datacommons/phs000972.v2.p1.identifier",
         "identifier": "phs000972.v2.p1"
       },
