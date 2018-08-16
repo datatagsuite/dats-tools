@@ -357,10 +357,11 @@ jsonld_doc = """
 
 topmed="""{
   "@type": "Dataset",
-  "@context": [ "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld", "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld"],
+  "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
   "@id": "http://w3id.org/datacommons/topmeddataset",
   "identifier": {
-    "@type": "Identifier",    
+    "@type": "Identifier",
+    "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
     "identifierSource": "TOPMed",
     "@id": "http://w3id.org/datacommons/topmeddataset.identifier",
     "identifier": "https://www.ncbi.nlm.nih.gov/gap/?term=topmed"
@@ -368,14 +369,16 @@ topmed="""{
   "title": "Trans-Omics for Precision Medicine (TOPMed)",
   "description": "TOPMed generates scientific resources related to heart, lung, blood, and sleep disorders (HLBS). It is sponsored by the NIH NHLBI and is part of a broader Precision Medicine Initiative.",
   "storedIn": {
-    "@type": "DataRepository",    
+    "@type": "DataRepository",
+    "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
     "@id": "https://www.ncbi.nlm.nih.gov/gap",
     "name": "dbGaP"
   },
   "types": [
     {
       "@type": "DataType",
-      "@id": "http://w3id.org/datacommons/datatype1",      
+      "@id": "http://w3id.org/datacommons/datatype1",
+      "@context": [ "https://w3id.org/dats/context/sdo/data_type_sdo_context.jsonld",  "https://w3id.org/dats/context/obo/data_type_obo_context.jsonld"],
       "information": {
         "value": "DNA sequencing",
         "valueIRI": "http://purl.obolibrary.org/obo/OBI_0000626"
@@ -392,7 +395,8 @@ topmed="""{
   ],
   "creators": [
     {
-      "@type": "Organization",      
+      "@type": "Organization",
+      "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
       "@id": "https://www.nhlbi.nih.gov/",
       "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
       "abbreviation": "NHLBI"
@@ -400,10 +404,12 @@ topmed="""{
   ],
   "distributions": [
     {
-      "@type": "DatasetDistribution",      
+      "@type": "DatasetDistribution",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_distribution_sdo_context.jsonld",  "https://w3id.org/dats/context/obo/dataset_distribution_obo_context.jsonld" ],
       "@id": "http://w3id.org/datacommons/datasetdistribution1",
       "access": {
-        "@type": "Access",       
+        "@type": "Access",
+        "@context": [ "https://w3id.org/dats/context/obo/access_obo_context.jsonld", "https://w3id.org/dats/context/sdo/access_sdo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/access1",
         "landingPage": "https://www.ncbi.nlm.nih.gov/gap/?term=topmed"
       }
@@ -412,11 +418,11 @@ topmed="""{
   "hasPart": [
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/dataset2",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld" ],
         "@id": "http://w3id.org/datacommons/phs000946.v3.p1.identifier",
         "identifier": "phs000946.v3.p1"
       },
@@ -424,7 +430,7 @@ topmed="""{
       "title": "Boston Early-Onset COPD Study in the TOPMed Program",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "https://www.ncbi.nlm.nih.gov/gap",
         "name": "dbGaP"
       },
