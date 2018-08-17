@@ -436,7 +436,7 @@ topmed="""{
       },
       "types": [
         {
-          "@context": "https://w3id.org/dats/context/sdo/data_type_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/data_type_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_type_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/datatype2",
           "information": {
             "value": "DNA sequencing",
@@ -455,7 +455,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -464,7 +464,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension1",
           "name": {
             "value": "Actual Subject Count"
@@ -495,18 +495,18 @@ topmed="""{
       "isAbout": [
         {
           "@type": "Material",
-          "@context": "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld", "https://w3id.org/dats/context/obo/material_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/material1",
           "name": "DNA from SA0000000",
           "description": "DNA extracted from blood specimen collected from subject SU0000000",
           "taxonomy": [
             {
               "@type": "TaxonomicInformation",
-              "@context": "https://w3id.org/dats/context/sdo/taxonomic_information_sdo_context.jsonld",
+              "@context": [ "https://w3id.org/dats/context/sdo/taxonomic_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/taxonomic_info_obo_context.jsonld"],
               "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
               "name": "Homo sapiens",
               "identifier": {
-                "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+                "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
                 "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
                 "identifier": "ncbitax:9606",
                 "identifierSource": "ncbitax"
@@ -522,12 +522,12 @@ topmed="""{
           "derivesFrom": [
             {
               "@type": "Material",
-              "@context": "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld",
+              "@context": [ "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld", "https://w3id.org/dats/context/obo/material_obo_context.jsonld"],
               "@id": "http://w3id.org/datacommons/material2",
               "name": "SA0000000",
               "identifier": {
                 "identifier": "SA0000000",
-                "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld"
+                "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"]
               },
               "alternateIdentifiers": [
                 {
@@ -535,20 +535,20 @@ topmed="""{
                   "@id": "http://w3id.org/datacommons/altid1",
                   "identifier": "0000000",
                   "identifierSource": "dbGaP",
-                  "@context": "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld"
+                  "@context": [ "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/alternate_identifier_info_obo_context.jsonld"]
                 }
               ],
               "description": "blood specimen collected from subject SU0000000",
               "taxonomy": [
                 {
                   "@type": "TaxonomicInformation",
-                  "@context": "https://w3id.org/dats/context/sdo/taxonomic_information_sdo_context.jsonld",
+                  "@context": [ "https://w3id.org/dats/context/sdo/taxonomic_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/taxonomic_info_obo_context.jsonld"],
                   "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
                   "name": "Homo sapiens",
                   "identifier": {
                     "identifier": "ncbitax:9606",
                     "identifierSource": "ncbitax",
-                    "@context": "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld"
+                    "@context": [ "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/alternate_identifier_info_obo_context.jsonld"]
                   }
                 }
               ],
@@ -561,17 +561,17 @@ topmed="""{
               "derivesFrom": [
                 {
                   "@type": "Material",
-                  "@context": "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld",
+                  "@context": [ "https://w3id.org/dats/context/sdo/material_sdo_context.jsonld", "https://w3id.org/dats/context/obo/material_obo_context.jsonld"],
                   "@id": "http://w3id.org/datacommons/material3",
                   "name": "SU0000000",
                   "identifier": {
                     "identifier": "SU0000000",
-                    "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld"
+                    "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"]
                   },
                   "alternateIdentifiers": [
                     {
                       "@type": "AlternateIdentifier",
-                      "@context": "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld",
+                      "@context": [ "https://w3id.org/dats/context/sdo/alternate_identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/alternate_identifier_info_obo_context.jsonld"],
                       "@id": "http://w3id.org/datacommons/altid2",
                       "identifier": "0000000",
                       "identifierSource": "dbGaP"
@@ -581,7 +581,7 @@ topmed="""{
                   "characteristics": [
                     {
                       "@type": "Dimension",
-                      "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+                      "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
                       "@id": "http://w3id.org/datacommons/dimension100",
                       "name": {
                         "value": "Gender"
@@ -593,7 +593,7 @@ topmed="""{
                     },
                     {
                       "@type": "Dimension",
-                      "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+                      "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
                       "@id": "http://w3id.org/datacommons/dimension101",
                       "name": {
                         "value": "Age"
@@ -607,13 +607,13 @@ topmed="""{
                   "taxonomy": [
                     {
                       "@type": "TaxonomicInformation",
-                      "@context": "https://w3id.org/dats/context/sdo/taxonomic_information_sdo_context.jsonld",
+                      "@context": [ "https://w3id.org/dats/context/sdo/taxonomic_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/taxonomic_info_obo_context.jsonld"],
                       "@id": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
                       "name": "Homo sapiens",
                       "identifier": {
                         "identifier": "ncbitax:9606",
                         "identifierSource": "ncbitax",
-                         "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld"
+                        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"]
                       }
                     }
                   ],
@@ -752,7 +752,7 @@ topmed="""{
                 },
                 {
                   "@type": "AnatomicalPart",
-                  "@context": "https://w3id.org/dats/context/sdo/anatomical_part_sdo_context.jsonld",
+                  "@context": [ "https://w3id.org/dats/context/sdo/anatomical_part_sdo_context.jsonld", "https://w3id.org/dats/context/obo/anatomical_part_obo_context.jsonld"],
                   "@id": "http://w3id.org/datacommons/catvp16",
                   "name": "blood",
                   "identifier": {
@@ -856,19 +856,19 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs001024.v3.p1",
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs001024.v3.p1.identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "identifier": "phs001024.v3.p1"
       },
       "version": "v3",
       "title": "Partners HealthCare Biobank",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
          "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -891,7 +891,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -900,7 +900,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension2",
           "name": {
             "value": "Actual Subject Count"
@@ -930,19 +930,19 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000964.v3.p1",
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs000964.v3.p1.identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "identifier": "phs000964.v3.p1"
       },
       "version": "v3",
       "title": "The Jackson Heart Study",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
          "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -965,7 +965,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -974,7 +974,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension3",
           "name": {
             "value": "Actual Subject Count"
@@ -1004,19 +1004,19 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000956.v3.p1",
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs000956.v3.p1.identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "identifier": "phs000956.v3.p1"
       },
       "version": "v3",
       "title": "Genetics of Cardiometabolic Health in the Amish",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
          "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1039,7 +1039,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1048,7 +1048,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension4",
           "name": {
             "value": "Actual Subject Count"
@@ -1078,19 +1078,19 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000954.v2.p1",
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs000954.v2.p1.identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "identifier": "phs000954.v2.p1"
       },
       "version": "v2",
       "title": "The Cleveland Family Study (WGS)",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
          "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1113,7 +1113,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1122,7 +1122,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension5",
           "name": {
             "value": "Actual Subject Count"
@@ -1152,11 +1152,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000921.v2.p1",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000921.v2.p1.identifier",
         "identifier": "phs000921.v2.p1"
       },
@@ -1164,7 +1164,7 @@ topmed="""{
       "title": "Study of African Americans, Asthma, Genes and Environment (SAGE) Study",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
          "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1187,7 +1187,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1196,7 +1196,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension6",
           "name": {
             "value": "Actual Subject Count"
@@ -1226,20 +1226,20 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs001040.v2.p1",
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs001040.v2.p1.identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "identifier": "phs001040.v2.p1"
       },
       "version": "v2",
       "title": "Novel Risk Factors for the Development of Atrial Fibrillation in Women",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
-         "@id": "http://w3id.org/datacommons/datarepository2",
+        "@context": ["https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
+        "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
       "types": [
@@ -1261,7 +1261,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1270,7 +1270,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension7",
           "name": {
             "value": "Actual Subject Count"
@@ -1300,11 +1300,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000993.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000993.v2.p2.identifier",
         "identifier": "phs000993.v2.p2"
       },
@@ -1312,7 +1312,7 @@ topmed="""{
       "title": "Heart and Vascular Health Study (HVH)",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1335,7 +1335,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1344,7 +1344,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension8",
           "name": {
             "value": "Actual Subject Count"
@@ -1374,11 +1374,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000997.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000997.v2.p2.identifier",
         "identifier": "phs000997.v2.p2"
       },
@@ -1386,7 +1386,7 @@ topmed="""{
       "title": "The Vanderbilt AF Ablation Registry",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1409,7 +1409,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1418,7 +1418,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension9",
           "name": {
             "value": "Actual Subject Count"
@@ -1448,19 +1448,19 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs001032.v3.p2",
       "identifier": {
         "@type": "Identifier",
         "@id": "http://w3id.org/datacommons/phs001032.v3.p2.identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "identifier": "phs001032.v3.p2"
       },
       "version": "v3",
       "title": "The Vanderbilt Atrial Fibrillation Registry",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1483,7 +1483,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1492,7 +1492,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension10",
           "name": {
             "value": "Actual Subject Count"
@@ -1522,11 +1522,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs001062.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs001062.v2.p2.identifier",
         "identifier": "phs001062.v2.p2"
       },
@@ -1534,7 +1534,7 @@ topmed="""{
       "title": "MGH Atrial Fibrillation Study",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1557,7 +1557,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1566,7 +1566,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension11",
           "name": {
             "value": "Actual Subject Count"
@@ -1596,11 +1596,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000920.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000920.v2.p2.identifier",
         "identifier": "phs000920.v2.p2"
       },
@@ -1608,7 +1608,7 @@ topmed="""{
       "title": "Genes-environments and Admixture in Latino Asthmatics (GALA II) Study",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1631,7 +1631,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1640,7 +1640,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension12",
           "name": {
             "value": "Actual Subject Count"
@@ -1670,11 +1670,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
        "@id": "http://w3id.org/datacommons/phs000974.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000974.v2.p2.identifier",
         "identifier": "phs000974.v2.p2"
       },
@@ -1682,7 +1682,7 @@ topmed="""{
       "title": "Whole Genome Sequencing and Related Phenotypes in the Framingham Heart Study",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1705,7 +1705,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1714,7 +1714,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension13",
           "name": {
             "value": "Actual Subject Count"
@@ -1744,11 +1744,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000951.v2.p2",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000951.v2.p2.identifier",
         "identifier": "phs000951.v2.p2"
       },
@@ -1756,7 +1756,7 @@ topmed="""{
       "title": "Genetic Epidemiology of COPD (COPDGene) in the TOPMed Program",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1779,7 +1779,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1788,7 +1788,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension14",
           "name": {
             "value": "Actual Subject Count"
@@ -1818,11 +1818,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld","https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000988.v2.p1",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000988.v2.p1.identifier",
         "identifier": "phs000988.v2.p1"
       },
@@ -1830,7 +1830,7 @@ topmed="""{
       "title": "The Genetic Epidemiology of Asthma in Costa Rica",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1853,7 +1853,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1862,7 +1862,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension15",
           "name": {
             "value": "Actual Subject Count"
@@ -1892,11 +1892,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs000972.v2.p1",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000972.v2.p1.identifier",
         "identifier": "phs000972.v2.p1"
       },
@@ -1904,7 +1904,7 @@ topmed="""{
       "title": "Genome-wide Association Study of Adiposity in Samoans",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -1927,7 +1927,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -1936,7 +1936,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension16",
           "name": {
             "value": "Actual Subject Count"
@@ -1966,11 +1966,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs001211.v1.p1",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs000972.v2.p1.identifier",
         "identifier": "phs001211.v1.p1"
       },
@@ -1978,7 +1978,7 @@ topmed="""{
       "title": "Trans-Omics for Precision Medicine Whole Genome Sequencing Project: ARICVersion 1: passed embargo",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -2001,7 +2001,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -2010,7 +2010,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension17",
           "name": {
             "value": "Actual Subject Count"
@@ -2040,11 +2040,11 @@ topmed="""{
     },
     {
       "@type": "Dataset",
-      "@context": "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld",
+      "@context": [ "https://w3id.org/dats/context/sdo/dataset_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dataset_obo_context.jsonld"],
       "@id": "http://w3id.org/datacommons/phs001189.v1.p1",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs001189.v1.p1.identifier",
         "identifier": "phs001189.v1.p1"
       },
@@ -2052,7 +2052,7 @@ topmed="""{
       "title": "Cleveland Clinic Atrial Fibrillation StudyVersion 1: passed embargo",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -2075,7 +2075,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -2084,7 +2084,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension18",
           "name": {
             "value": "Actual Subject Count"
@@ -2118,7 +2118,7 @@ topmed="""{
       "@id": "http://w3id.org/datacommons/phs001143.v1.p1",
       "identifier": {
         "@type": "Identifier",
-        "@context": "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/identifier_info_sdo_context.jsonld", "https://w3id.org/dats/context/obo/identifier_info_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/phs001143.v1.p1.identifier",
         "identifier": "phs001143.v1.p1"
       },
@@ -2126,7 +2126,7 @@ topmed="""{
       "title": "The Genetics and Epidemiology of Asthma in BarbadosVersion 1: passed embargo",
       "storedIn": {
         "@type": "DataRepository",
-        "@context": "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld",
+        "@context": [ "https://w3id.org/dats/context/sdo/data_repository_sdo_context.jsonld", "https://w3id.org/dats/context/obo/data_repository_obo_context.jsonld"],
         "@id": "http://w3id.org/datacommons/datarepository2",
         "name": "dbGaP"
       },
@@ -2149,7 +2149,7 @@ topmed="""{
       "creators": [
         {
           "@type": "Organization",
-          "@context": "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/organization_sdo_context.jsonld", "https://w3id.org/dats/context/obo/organization_obo_context.jsonld"],
           "@id": "https://www.nhlbi.nih.gov/",
           "name": "The National Institute of Health's National Heart, Lung and Blood Institute",
           "abbreviation": "NHLBI"
@@ -2158,7 +2158,7 @@ topmed="""{
       "dimensions": [
         {
           "@type": "Dimension",
-          "@context": "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld",
+          "@context": [ "https://w3id.org/dats/context/sdo/dimension_sdo_context.jsonld", "https://w3id.org/dats/context/obo/dimension_obo_context.jsonld"],
           "@id": "http://w3id.org/datacommons/dimension19",
           "name": {
             "value": "Actual Subject Count"
