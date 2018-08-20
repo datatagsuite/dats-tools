@@ -12,6 +12,57 @@ logger = logging.getLogger(__name__)
 DATS_schemasPath = os.path.join(os.path.dirname(__file__), "../json-schemas")
 DATS_contextsPath = os.path.join(os.path.dirname(__file__), "../contexts")
 
+ENTITIES = {
+    "Access": "access",
+    "Activity": "activity",
+    "AlternateIdentifier": "alternate_identifier_info",
+    "AnatomicalPart": "anatomical_part",
+    "Annotation": "annotation",
+    "BiologicalEntity": "biological_entity",
+    "CategoryValuesPair": "category_values_pair",
+    "Consent": "consent_info",
+    "DataAcquisition": "data_acquisition",
+    "DataAnalysis": "data_analysis",
+    "DataRepository": "data_repository",
+    "DataStandard": "data_standard",
+    "DataType": "data_type",
+    "Dataset":  "dataset",
+    "DatasetDistribution": "dataset_distribution",
+    "Date": "date_info",
+    "Dimension": "dimension",
+    "Disease":  "disease",
+    "Grant": "grant",
+    "Identifier": "identifier_info",
+    "Instrument":  "instrument",
+    "License": "license",
+    "Material": "material",
+    "MolecularEntity": "molecular",
+    "Organization":  "organization",
+    "Person": "person",
+    "Place": "place",
+    "Provenance": "provenance",
+    "Publication": "publication",
+    "RelatedIdentifier": "related_identifier_info",
+    "Software": "software",
+    "Study": "study",
+    "StudyGroup": "study_group",
+    "TaxonomicInformation": "taxonomic_info",
+    "Treatment": "treatment"
+    }
+
+
+def get_schema_uri(entity):
+    return "https://w3id.org/dats/schema/"+get_schema_filename(entity)
+
+def get_schema_filename(entity):
+    return ENTITIES[entity]+"_schema.json"
+
+def get_obo_context_uri(entity):
+    return "http://w3id.org/dats/context/obo/"+ENTITIES[entity]+"_obo_context.jsonld"
+
+def get_sdo_context_uri(entity):
+    return "http://w3id.org/dats/context/sdo/"+ENTITIES[entity]+"_sdo_context.jsonld"
+
 
 def get_schemas_store(path):
     files = [f for f in listdir(path) if isfile(join(path, f))]
