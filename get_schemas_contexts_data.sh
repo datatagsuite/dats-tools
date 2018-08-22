@@ -7,5 +7,7 @@ git clone --single-branch http://github.com/datatagsuite/schema json-schemas
 rm json-schemas/README.md
 git clone --single-branch http://github.com/datatagsuite/examples json-instances
 git clone --single-branch http://github.com/datatagsuite/context contexts
-rm contexts/sdo/README.md
-rm contexts/obo/README.md
+rm contexts/sdo/*.md
+rm contexts/obo/*.md
+rm json-schemas/*.md
+rm json-instances/*.md
