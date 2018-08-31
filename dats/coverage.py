@@ -24,6 +24,21 @@ class Coverage:
                     diff.append(field)
         return overlap, diff
 
+    @staticmethod
+    def json_schema_context_mapping(schema, *contexts):
+        "Method to retrieve the mapping between a schema and multiple context files"
+        mappings = {}
+        terms = []
+
+        for field in schema["properties"]:
+            if field not in Coverage.jsonld_ignored_keys:
+                for context in contexts:
+                    #print(context)
+                    if field in context["@context"]:
+                        terms.append(context["@context"][field])
+
+                mappings.update( { field : terms })
+        print(mappings)
 
 if __name__ == "__main__":
     schema_filename = "dataset_schema.json"
@@ -37,5 +52,4 @@ if __name__ == "__main__":
     print(Coverage.json_schema_context_coverage(schema, context))
 
 
-
-    #Coverage.json_schema_context_mapping(schema, context)
+    Coverage.json_schema_context_mapping(schema, context)
