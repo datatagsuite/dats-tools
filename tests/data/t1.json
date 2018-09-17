@@ -1,0 +1,41 @@
+{
+  "@type": "Dataset",
+  "@context": [
+    "https://datatagsuite.github.io/context/sdo/dataset_sdo_context.jsonld",
+    "https://datatagsuite.github.io/context/obo/dataset_obo_context.jsonld"
+  ],
+  "@id": "http://127.0.0.1/TMPID/78e62a58-9de1-4d07-ba07-e8f7adf5e9d9",
+  "title": "Alliance of Genome Resources (AGR)",
+  "types": [
+
+    {
+      "information": {
+        "value": "DNA sequencing",
+        "valueIRI": "http://purl.obolibrary.org/obo/OBI_0000626"
+      }
+    }
+  ],
+  "creators": [
+    {
+      "@type": "Organization",
+      "@context": [
+        "https://datatagsuite.github.io/context/sdo/organization_sdo_context.jsonld",
+        "https://datatagsuite.github.io/context/obo/organization_obo_context.jsonld"
+      ],
+      "@id": "http://127.0.0.1/TMPID/d0647402-18c2-4bc7-a9fe-b58c72541ced",
+      "abbreviation": "AGR",
+      "name": "Alliance of Genome Resources"
+    }
+  ],
+  "isAbout": [
+          {
+            "@type": "MolecularEntity",
+            "@context": [
+              "https://datatagsuite.github.io/context/sdo/molecular_entity_sdo_context.jsonld",
+              "https://datatagsuite.github.io/context/obo/molecular_entity_obo_context.jsonld"
+            ],
+            "@id": "http://127.0.0.1/TMPID/f30b6826-4f3a-4885-bcf3-e34062e6f45e",
+            "name": "RGD:11498162"
+	  }
+    ]
+}
