@@ -20,7 +20,7 @@ def get_schemas_store(path):
         schema_path = os.path.join(DATS_schemasPath, schema_filename)
         with open(schema_path, 'r') as schema_file:
             schema = json.load(schema_file)
-            store.append({ schema['id'] :  schema })
+            store.append({ schema['$id'] :  schema })
         return store
 
 def validate_instance(path, filename, schema_filename, error_printing):
@@ -29,7 +29,7 @@ def validate_instance(path, filename, schema_filename, error_printing):
         schema = json.load(schema_file)
         schemastore = get_schemas_store(DATS_schemasPath)
         print(schemastore)
-        store = { schema['id']: schema}
+        store = { schema['$id']: schema}
         resolver = RefResolver(base_uri='file://' + DATS_schemasPath + '/' + schema_filename, referrer=schema, store=store )
         validator = Draft4Validator(schema, resolver=resolver, format_checker=FormatChecker())
         logger.info("Validating %s against %s ", filename,  schema_filename)
