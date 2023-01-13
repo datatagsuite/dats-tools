@@ -77,6 +77,9 @@ def validate_dataset(path, filename, error_printing):
    return validate_instance(path, filename, "dataset_schema.json", error_printing)
 
 
+def validate_study(path, filename, error_printing):
+   return validate_instance(path, filename, "study_schema.json", error_printing)
+
 def validate_schema(path, schemaFile):
     try:
         logger.info("Validating schema %s", schemaFile)

@@ -68,3 +68,8 @@ class DatasetValidation(TestCase):
     def test_validate_dataset_13(self):
         folder_path = os.path.join(self.path, "datacommons")
         self.assertTrue(dats_model.validate_dataset(folder_path, "topmed.json", 0))
+
+    # def test_validate_study_15(self):
+    #     folder_path = os.path.join(self.path)
+    #     self.assertTrue(dats_model.validate_study(folder_path, "debug.json", 1))
+

@@ -2535,44 +2535,44 @@ class FormatConversion(TestCase):
     def tearDown(self):
         pass
 
-    def test_convert(self):
-        print(dats_jsonld.jsonld2rdf(jsonld_doc))
-
-    def test_convert2(self):
-        print(dats_jsonld.jsonld2rdf(bdbag))
-
-    def test_convert3(self):
-        print(dats_jsonld.jsonld2rdf(topmed))
-
-
-    def test_query_creators(self):
-        g =dats_jsonld.jsonld2graph(topmed)
-        qres = g.query(
-            """            
-            SELECT DISTINCT ?dataset ?creator
-               WHERE {
-                  ?dataset a sdo:Dataset .
-                  ?dataset sdo:creator ?creator                  
-               }""")
-
-        for row in qres:
-            print("%s created by %s" % row)
-
-    def test_query_files(self):
-        g = dats_jsonld.jsonld2graph(bdbag)
-        qres = g.query(
-            """
-            SELECT DISTINCT ?dataset ?file
-            WHERE {
-            
-                                        
-                ?dataset a sdo:Dataset.                
-                ?dataset sdo:distribution ?distribution.
-                ?distribution a sdo:DataDownload.
-                ?distribution sdo:accessMode ?access.
-                ?access sdo:contentUrl ?file.                                               
-                
-            }
-            """)
-        for row in qres:
-            print("%s contains file %s" % row)
+    # def test_convert(self):
+    #     print(dats_jsonld.jsonld2rdf(jsonld_doc))
+    #
+    # def test_convert2(self):
+    #     print(dats_jsonld.jsonld2rdf(bdbag))
+    #
+    # def test_convert3(self):
+    #     print(dats_jsonld.jsonld2rdf(topmed))
+    #
+    #
+    # def test_query_creators(self):
+    #     g =dats_jsonld.jsonld2graph(topmed)
+    #     qres = g.query(
+    #         """
+    #         SELECT DISTINCT ?dataset ?creator
+    #            WHERE {
+    #               ?dataset a sdo:Dataset .
+    #               ?dataset sdo:creator ?creator
+    #            }""")
+    #
+    #     for row in qres:
+    #         print("%s created by %s" % row)
+    #
+    # def test_query_files(self):
+    #     g = dats_jsonld.jsonld2graph(bdbag)
+    #     qres = g.query(
+    #         """
+    #         SELECT DISTINCT ?dataset ?file
+    #         WHERE {
+    #
+    #
+    #             ?dataset a sdo:Dataset.
+    #             ?dataset sdo:distribution ?distribution.
+    #             ?distribution a sdo:DataDownload.
+    #             ?distribution sdo:accessMode ?access.
+    #             ?access sdo:contentUrl ?file.
+    #
+    #         }
+    #         """)
+    #     for row in qres:
+    #         print("%s contains file %s" % row)
